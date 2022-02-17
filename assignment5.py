@@ -1,10 +1,23 @@
-input_str = input('Write a word: ') # do not change this line
 
-for i in range(1,len(input_str)):
-    print(input_str[:i])
+filename = input('Filename: ') # do not change this line
 
-for i,c in enumerate(input_str):
-    print(' '*i, end='')
-    print(input_str[i:])
+# your code here
+
+def open_file(file_name):
+    f = open(file_name, "r")
+    return f
+
+def average_numbers(file):
+    sum_file = 0
+    counter = 0
+    for line in file:
+        sum_file += int(line)
+        counter += 1
+    sum_file = sum_file/counter
+    return sum_file
 
 
+if __name__ == "__main__":
+    my_file = open_file(filename)
+    my_sum = average_numbers(my_file)
+    print(my_sum)
