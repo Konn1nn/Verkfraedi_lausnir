@@ -3,3 +3,5 @@
 
 Í möppunni getur þú keyrt 
 `python3 <nafn á skrá>` til að sjá niðurstöðurnar í console/terminal.
+
+![Programming image](programming.gif)
