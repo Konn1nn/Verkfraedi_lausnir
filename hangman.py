@@ -20,14 +20,17 @@ def check_guess(guess_word, letter_string) -> bool:
     else:
         return False
 
+def did_win(my_bool):
+    if my_bool:
+        print("WIN")
+    else:
+        print("LOSE")
+
 def main():
     guess_word = get_string()
     letter_string = get_string()
     win_loose = check_guess(guess_word, letter_string)
-    if win_loose:
-        print("WIN")
-    else:
-        print("LOSE")
+    did_win(win_loose)
 
 
 if __name__ == "__main__":
