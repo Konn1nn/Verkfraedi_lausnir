@@ -18,7 +18,7 @@ def check_guess(guess_word, letter_string) -> bool:
     if "W" not in guess_list:
         return True
     else:
-        return False
+        return True
 
 def did_win(my_bool):
     if my_bool:
